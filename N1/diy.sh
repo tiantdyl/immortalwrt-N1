@@ -14,7 +14,6 @@ function git_sparse_clone() {
 }
 
 # Add packages
-git clone -b js --single-branch https://github.com/gngpp/luci-theme-design package/luci-theme-design
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic package/amlogic
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wechatpush
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-lucky
@@ -31,7 +30,6 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-lin
 
 echo "
 # 插件
-#CONFIG_PACKAGE_luci-theme-design=y
 #CONFIG_PACKAGE_luci-app-mosdns=y
 #CONFIG_PACKAGE_luci-app-pushbot=y
 #CONFIG_PACKAGE_luci-app-aliddns=y
@@ -63,4 +61,4 @@ cp -f $GITHUB_WORKSPACE/argon/icon/favicon-16x16.png feeds/luci/themes/luci-them
 cp -f $GITHUB_WORKSPACE/argon/icon/favicon-32x32.png feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/icon/favicon-32x32.png
 cp -f $GITHUB_WORKSPACE/argon/icon/favicon-96x96.png feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/icon/favicon-96x96.png
 cp -f $GITHUB_WORKSPACE/argon/icon/ms-icon-144x144.png feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/icon/ms-icon-144x144.png
-cp -f $GITHUB_WORKSPACE/argon/favicon.ico package/luci-theme-design/htdocs/luci-static/design/favicon.ico
+#cp -f $GITHUB_WORKSPACE/argon/favicon.ico package/luci-theme-design/htdocs/luci-static/design/favicon.ico
