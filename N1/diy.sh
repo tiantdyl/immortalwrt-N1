@@ -15,8 +15,8 @@ function git_sparse_clone() {
 
 # Add packages
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic package/amlogic
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wechatpush
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-lucky
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wechatpush iputils-arping curl jq bash
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-lucky lucky
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease linkease ffmpeg-remux
 #git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-turboacc
 #git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
