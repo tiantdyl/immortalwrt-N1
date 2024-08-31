@@ -27,7 +27,7 @@ jobs:
     - name: 准备完成
       uses: actions/checkout@main
 
-    - name: Free up space
+    - name: 清理磁盘空间
       uses: jlumbroso/free-disk-space@main
       with:
         tool-cache: false
@@ -107,7 +107,7 @@ jobs:
         GZIP_IMGS: .xz
         SCRIPT_DIY_PATH: N1/mk_s905d_n1.sh
         WHOAMI: innmonkey
-        SW_FLOWOFFLOAD: 1
+        SW_FLOWOFFLOAD: 0
         SFE_FLOW: 0
         ENABLE_WIFI_K510: 0
 
