@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Remove packages
-rm -rf feeds/packages/net/v2ray-geodata
+#rm -rf feeds/packages/net/v2ray-geodata
 
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
@@ -33,8 +33,8 @@ echo "
 #CONFIG_PACKAGE_luci-app-mosdns=y
 #CONFIG_PACKAGE_luci-app-pushbot=y
 #CONFIG_PACKAGE_luci-app-aliddns=y
-CONFIG_PACKAGE_luci-app-linkease=y
 #CONFIG_PACKAGE_luci-app-turboacc=y
+CONFIG_PACKAGE_luci-app-linkease=y
 CONFIG_PACKAGE_luci-app-lucky=y
 CONFIG_PACKAGE_luci-app-wechatpush=y
 " >> .config
