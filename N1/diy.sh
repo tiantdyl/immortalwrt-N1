@@ -17,7 +17,8 @@ function git_sparse_clone() {
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic package/amlogic
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wechatpush iputils-arping curl jq bash
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-lucky lucky
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease linkease ffmpeg-remux
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease linkease ffmpeg-remux linkmount
+
 #git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-turboacc
 #git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
 #git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-aliddns
@@ -34,6 +35,7 @@ echo "
 #CONFIG_PACKAGE_luci-app-pushbot=y
 #CONFIG_PACKAGE_luci-app-aliddns=y
 #CONFIG_PACKAGE_luci-app-turboacc=y
+
 CONFIG_PACKAGE_luci-app-linkease=y
 CONFIG_PACKAGE_luci-app-lucky=y
 CONFIG_PACKAGE_luci-app-wechatpush=y
