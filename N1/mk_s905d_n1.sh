@@ -181,6 +181,7 @@ adjust_kernel_env
 copy_uboot_to_fs
 write_release_info
 write_banner 
+sed -i 's/lean & lienol/lean & lienol & immortalwrt/g' etc/banner
 config_first_run
 create_snapshot "etc-000"
 write_uboot_to_disk
