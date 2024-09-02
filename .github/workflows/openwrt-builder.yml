@@ -97,10 +97,10 @@ jobs:
       env:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
         KERNEL_VERSION_NAME: 6.6.y
-        PACKAGE_SOC: diy
-        GZIP_IMGS: .xz
+        PACKAGE_SOC: s905d
         SCRIPT_DIY_PATH: N1/mk_s905d_n1.sh
         WHOAMI: innmonkey
+        OPENWRT_VER: $(date +"%Y.%m.%d-%H.%M")
         SW_FLOWOFFLOAD: 0
         SFE_FLOW: 0
         ENABLE_WIFI_K510: 0
