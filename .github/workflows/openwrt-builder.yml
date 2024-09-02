@@ -98,6 +98,7 @@ jobs:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
         KERNEL_VERSION_NAME: 6.6.y
         PACKAGE_SOC: s905d
+        GZIP_IMGS: .xz
         SCRIPT_DIY_PATH: N1/mk_s905d_n1.sh
         WHOAMI: innmonkey
         OPENWRT_VER: $(date +"%Y.%m.%d-%H.%M")
