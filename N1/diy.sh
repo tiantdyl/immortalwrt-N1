@@ -19,23 +19,13 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wec
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-lucky lucky
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease linkease ffmpeg-remux linkmount
 
-#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-turboacc
-#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
-#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-aliddns
-#git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-#git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
-
 # 加入OpenClash核心
 #chmod -R a+x $GITHUB_WORKSPACE/preset-clash-core.sh
 #$GITHUB_WORKSPACE/N1/preset-clash-core.sh
 
 echo "
 # 插件
-#CONFIG_PACKAGE_luci-app-mosdns=y
-#CONFIG_PACKAGE_luci-app-pushbot=y
-#CONFIG_PACKAGE_luci-app-aliddns=y
-#CONFIG_PACKAGE_luci-app-turboacc=y
-
+CONFIG_PACKAGE_luci-app-amlogic=y
 CONFIG_PACKAGE_luci-app-linkease=y
 CONFIG_PACKAGE_luci-app-lucky=y
 CONFIG_PACKAGE_luci-app-wechatpush=y
