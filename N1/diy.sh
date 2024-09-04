@@ -15,7 +15,6 @@ function git_sparse_clone() {
 
 # Add packages
 git clone --depth=1 https://github.com/ophub/luci-app-amlogic package/amlogic
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wechatpush iputils-arping curl jq bash
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-lucky lucky
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease linkease ffmpeg-remux linkmount
 
@@ -28,7 +27,6 @@ echo "
 CONFIG_PACKAGE_luci-app-amlogic=y
 CONFIG_PACKAGE_luci-app-linkease=y
 CONFIG_PACKAGE_luci-app-lucky=y
-CONFIG_PACKAGE_luci-app-wechatpush=y
 " >> .config
 
 # 修改默认IP
